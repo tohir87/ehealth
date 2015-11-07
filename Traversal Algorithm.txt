@@ -1,0 +1,12 @@
+Tree Traversal can often be regard as a process of reading/processing data in each node in the tree exactly once in some order.
+
+Depth first traversal
+In each node, we will process all its children before its grand-children
+we first process the root, then the left sub-tree followed by the right sub-tree
+<root><left>right>
+
+Algorithm.
+1. Determine the root of the tree.
+2. Determine the number of nodes/branches of the root.
+3. loop over the main branches one after the other
+4. Visit all the nodes in the selected branch recursively

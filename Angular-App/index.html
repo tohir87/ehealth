@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title> Angular PouchDB Application </title>
+
+		<link href="bower_components/toastr/toastr.min.css" rel="stylesheet" type="text/css">
+		
+		<script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
+		<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="bower_components/pouchdb/dist/pouchdb.min.js" type="text/javascript"></script>
+		<script src="bower_components/toastr/toastr.min.js" type="text/javascript"></script>
+		
+		<script src="js/inventory.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		<form method="post" ng-app="inventory">
+			<table align="center" style="width:300px" ng-controller="drugCtrl">
+				<tr>
+					<th colspan=2> <h3>Inventory Information</h3></th>
+				</tr>
+				<tr>
+					<td> Drug Name</td>
+					<td> <input ng-required="true" type='text' id="drug" ng-model="drugs.drug_name" ></td>
+				</tr>
+				<tr>
+					<td> Description</td>
+					<td> <input ng-required="true" type='text' id="description" ng-model="drugs.description" ></td>
+				</tr>
+				<tr>
+					<td> Quantity</td>
+					<td> <input ng-required="true" type='text' id="quantity" ng-model="drugs.quantity" ></td>
+				</tr>
+				<tr>
+					<td> &nbsp;</td>
+					<td> <button type='submit' ng-click="saveDrug()" >Save Drug</button>
+						<button type='reset' >Clear Fields</button>
+					</td>
+				</tr>
+				
+			</table>
+		</form>
+
+	</body>
+</html>

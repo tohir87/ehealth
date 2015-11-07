@@ -1,0 +1,18 @@
+{
+  "name": "Angular-App",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^0.13.15",
+    "phantomjs": "^1.9.18",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "angular-mocks": "^1.4.7",
+    "angular": "^1.4.7"
+  }
+}
